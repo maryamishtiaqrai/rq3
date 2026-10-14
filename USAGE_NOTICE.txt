@@ -1,0 +1,27 @@
+USAGE NOTICE – Research Source Code
+===================================
+
+Project Title
+-------------
+CLIP Guided Filter Recovery for Weapon Detection Using Dual YOLO Box Fusion
+
+Journal: The Visual Computer
+Paper Status: Submitted
+
+Notes
+-----
+- This repository is shared to support transparency, reproducibility, and peer review.
+- Dataset redistribution remains subject to the terms of the original dataset providers.
+- Model weights and large third-party datasets are not redistributed here unless separately permitted.
+- Publication metadata and a DOI can be added after acceptance/publication.
+
+Usage Policy
+------------
+Copyright © 2026 Muhammad Ishtiaq and co-authors.
+
+The repository is provided for research transparency and peer-review purposes. If you wish to reuse or adapt the code, please contact the corresponding/submitting author and cite the associated manuscript when appropriate.
+
+Contact
+-------
+Muhammad Ishtiaq
+Email: ishtiaqrai8@gmail.com

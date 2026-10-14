@@ -1,0 +1,37 @@
+Example command using the manuscript CVD settings
+=================================================
+
+Replace the placeholder paths with your own dataset YAML and model checkpoints.
+
+python create_clip_dataset_from_wbf_pairs.py \
+  --data_yaml /path/to/data.yaml \
+  --models \
+    y8x:/path/to/y8x_best.pt \
+    y8l:/path/to/y8l_best.pt \
+    y26n:/path/to/y26n_best.pt \
+    y26s:/path/to/y26s_best.pt \
+  --out_root /path/to/cvd_output \
+  --splits train valid test \
+  --imgsz 640 \
+  --device cuda:0 \
+  --low_conf 0.001 \
+  --final_conf 0.01 \
+  --wbf_iou 0.55 \
+  --conf_type avg \
+  --conf_rescale min \
+  --hard_iou_thr 0.10 \
+  --pred_overlap_thr 0.10 \
+  --negative_pad 0.05 \
+  --max_neg_per_image_pair 20 \
+  --train_pos_pads 0.15 \
+  --eval_pos_pads 0.15 \
+  --balance_splits \
+  --balance_train_only \
+  --seed 42 \
+  --overwrite
+
+Notes
+-----
+- The script argument name `--max_neg_per_image_pair` is retained from the original research code.
+  In the manuscript this is described more precisely as the maximum per image--detector-pair combination.
+- Paper-specific settings are passed explicitly here because some original source-code defaults were used for earlier development runs.

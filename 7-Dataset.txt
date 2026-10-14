@@ -1,0 +1,33 @@
+Datasets used in this study
+===========================
+
+1. Main Dataset (MD)
+--------------------
+The image-level weapon-detection data originate from the Knife and Pistol Detection Dataset:
+https://doi.org/10.1049/ipr2.70442
+
+The manuscript applies cleaning, image-level splitting, and training-only balancing before detector training.
+The final MD contains 16,308 images. Validation and test subsets remain in their original evaluation distributions.
+
+2. Crop-level Verifier Dataset (CVD)
+------------------------------------
+The CVD is derived from MD rather than distributed here as a separate external dataset.
+Knife and pistol samples are crops from MD ground-truth boxes. Non-weapon samples are target-domain WBF-mined false-positive regions.
+Use 1-cvd-construction/create_clip_dataset_from_wbf_pairs.py to reproduce the crop-generation procedure.
+
+Final CVD counts used in the manuscript:
+  Train:      knife 3013 | pistol 3013 | non-weapon 3013 | total 9039
+  Validation: knife 1448 | pistol 1216 | non-weapon 1124 | total 3788
+  Test:       knife 1447 | pistol 1217 | non-weapon 1052 | total 3716
+  Overall total: 16,543 crops
+
+3. External zero-shot set (ZS-MMD)
+----------------------------------
+The external zero-shot evaluation is derived from the Merged Military Dataset used in the cited CC-WBF study.
+It contains 1,710 images and 2,323 annotated weapon instances in the evaluation used here.
+Handgun annotations are mapped to pistol to match the two-class detector label space.
+The external set is used only after validation-stage selection and is not used for training or threshold selection.
+
+Notes
+-----
+Dataset redistribution rights belong to the original dataset providers. This repository documents the processing pipeline and does not re-license third-party imagery.

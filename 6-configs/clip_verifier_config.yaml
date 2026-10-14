@@ -1,0 +1,19 @@
+backbone: OpenCLIP ViT-B/32
+pretraining: LAION-2B e16
+training_mode:
+  visual_encoder: fine-tuned
+  text_encoder: frozen
+prompts:
+  - "a cropped image of a knife"
+  - "a cropped image of a pistol"
+  - "a cropped image of a non-weapon object"
+maximum_epochs: 150
+early_stopping_patience: 50
+batch_size: 32
+learning_rate: 2.0e-6
+weight_decay: 0.2
+mixed_precision: true
+workers: 4
+seed: 42
+checkpoint_selection: validation_macro_f1
+best_epoch: 119

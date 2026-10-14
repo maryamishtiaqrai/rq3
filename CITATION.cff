@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated manuscript."
+title: "CLIP Guided Filter Recovery for Weapon Detection Using Dual YOLO Box Fusion"
+type: software
+authors:
+  - family-names: Ishtiaq
+    given-names: Muhammad
+  - family-names: Li
+    given-names: Mingchu
+  - family-names: Alam
+    given-names: Talha Mahboob
+  - family-names: Gulzar
+    given-names: Maryam
+  - family-names: Ullah
+    given-names: Muhammad Farhat
+date-released: 2026-09-24
+repository-code: "https://github.com/MuhammadIshtiaq/RQ3-Dataset-and-Code"
+preferred-citation:
+  type: article
+  title: "CLIP Guided Filter Recovery for Weapon Detection Using Dual YOLO Box Fusion"
+  authors:
+    - family-names: Ishtiaq
+      given-names: Muhammad
+    - family-names: Li
+      given-names: Mingchu
+    - family-names: Alam
+      given-names: Talha Mahboob
+    - family-names: Gulzar
+      given-names: Maryam
+    - family-names: Ullah
+      given-names: Muhammad Farhat
+  journal: "The Visual Computer"
+  year: 2026

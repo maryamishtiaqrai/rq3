@@ -1,0 +1,23 @@
+detector_pool:
+  - YOLOv8x
+  - YOLOv8l
+  - YOLO26n
+  - YOLO26s
+number_of_unordered_dual_pairs: 6
+image_size: 640
+detector_low_confidence_threshold: 0.001
+detector_nms_iou_threshold: 0.70
+max_detections_per_image: 300
+wbf_iou_threshold: 0.55
+detector_weights: equal
+wbf_confidence_type: average
+confidence_rescaling: minimum
+final_mining_confidence_threshold: 0.01
+maximum_non_weapon_crops_per_image_detector_pair: 20
+positive_crop_padding: 0.15
+negative_crop_padding: 0.05
+hard_negative_rules:
+  max_iou_with_ground_truth: 0.10
+  max_intersection_over_candidate_area: 0.10
+  candidate_center_outside_all_ground_truth: true
+seed: 42
