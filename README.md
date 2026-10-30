@@ -1,7 +1,7 @@
 # CLIP Guided Filter Recovery for Weapon Detection Using Dual YOLO Box Fusion
 *(Source code, selected experimental outputs, and reproducibility resources for the associated manuscript)*
 
-**Journal:** The Visual Computer  
+**Journal:** Advanced Intelligent Systems  
 **Paper Status:** Submitted
 
 This repository contains the experimental code and selected result files used for the manuscript:
@@ -151,7 +151,7 @@ Edit only `repo_config.json`:
 
 ```json
 {
-  "journal_name": "The Visual Computer",
+  "journal_name": "Advanced Intelligent Systems",
   "paper_status": "Submitted"
 }
 ```
@@ -174,7 +174,7 @@ Until publication metadata/DOI are available, cite the repository/manuscript usi
 @article{ishtiaq2026clipfr,
   title={CLIP Guided Filter Recovery for Weapon Detection Using Dual YOLO Box Fusion},
   author={Ishtiaq, Muhammad and Li, Mingchu and Alam, Talha Mahboob and Mansoor, Junaid Abdullah and Gulzar, Maryam},
-  journal={The Visual Computer},
+  journal={Advanced Intelligent Systems},
   year={2026},
   note={Paper status: Submitted}
 }
