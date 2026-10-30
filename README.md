@@ -7,7 +7,7 @@
 This repository contains the experimental code and selected result files used for the manuscript:
 
 > **CLIP Guided Filter Recovery for Weapon Detection Using Dual YOLO Box Fusion**  
-> Authors: Muhammad Ishtiaq, Mingchu Li, Talha Mahboob Alam, Junaid Abdullah Mansoor, Maryam Gulzar
+> Authors: Muhammad Ishtiaq, Mingchu Li, Sanaullah Manzoor, Talha Mahboob Alam, Junaid Abdullah Mansoor, Maryam Gulzar
 
 The main framework uses YOLOv8x and YOLOv8l for localization, class-wise Weighted Boxes Fusion (WBF) for spatial fusion, and a fine-tuned OpenCLIP ViT-B/32 model as a crop-level semantic verifier. The final CLIP-FR decision rule selectively filters intermediate-confidence candidates and recovers semantically supported low-confidence candidates.
 
@@ -173,7 +173,7 @@ Until publication metadata/DOI are available, cite the repository/manuscript usi
 ```bibtex
 @article{ishtiaq2026clipfr,
   title={CLIP Guided Filter Recovery for Weapon Detection Using Dual YOLO Box Fusion},
-  author={Ishtiaq, Muhammad and Li, Mingchu and Alam, Talha Mahboob and Mansoor, Junaid Abdullah and Gulzar, Maryam},
+  author={Ishtiaq, Muhammad and Li, Mingchu and Manzoor, Sanaullah and Alam, Talha Mahboob and Mansoor, Junaid Abdullah and Gulzar, Maryam},
   journal={Advanced Intelligent Systems},
   year={2026},
   note={Paper status: Submitted}
